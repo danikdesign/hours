@@ -1,0 +1,10 @@
+<% if object&.errors&.full_messages&.any? %>
+  <div role="alert" class="rounded border-s-4 border-red-500 bg-red-50 p-4 my-10">
+    <strong class="block font-medium text-red-800"> Something went wrong </strong>
+    <% object.errors.full_messages.each do |msg| %>
+      <p class="mt-2 text-sm text-red-700">
+        <%= msg %>
+      </p>
+    <% end %>
+  </div>
+<% end %>

@@ -1,5 +1,13 @@
 <% if flash.any? %>
   <% flash.each do |_type, msg| %>
-    <%= msg %>
+    <div class="p-4">
+      <p class="py-2 px-3 bg-blue-50 mb-5 
+              text-blue-600 font-normal 
+              rounded-tr-lg rounded-br-lg 
+              rounded-bl-lg inline-block" 
+              id="notice">
+        <%= msg %>
+      </p>
+    </div>
   <% end %>
 <% end %>

@@ -1,8 +1,11 @@
 <% provide :page_title, 'Home' %>
 <% main_menu %>
-<div>
-  <h4 class="p-4 text-md text-gray-800 tracking-tight font-normal">
-    Hello! Today is 
+<div class="cursor-pointer">
+  <h2 class="text-3xl font-medium text-gray-800 tracking-tight font-normal">
+    Hello!
+  </h2>
+  <h4 class="text-xl font-medium text-gray-800 tracking-tight font-normal">
+    Today is 
     <span class="hover:font-semibold hover:text-blue-600 duration-200">
       <%= Date.today.strftime('%A %B, %d ') %>
     </span>
